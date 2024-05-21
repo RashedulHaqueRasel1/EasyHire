@@ -53,11 +53,14 @@ const Registration = () => {
                 console.log(result.user)
                     .then(() => {
                         Swal.fire({
-                            icon: "error",
-                            title: "Oops...",
-                            text: "Something went wrong!",
-                            footer: '<a href="#">Why do I have this issue?</a>'
+                            title: "Registration Success",
+                            text: "You have Registration Success",
+                            icon: "success"
                         });
+
+                        
+                        // Page Change
+                        navigate('/')
 
 
 
@@ -67,12 +70,12 @@ const Registration = () => {
             })
             .catch(error => {
                 Swal.fire({
-                    title: "Registration Success",
-                    text: "You have Registration Success",
-                    icon: "success"
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    // footer: '<a href="#">Why do I have this issue?</a>'
                 });
-                // Page Change
-                navigate('/')
+
                 console.error(error)
             })
 
