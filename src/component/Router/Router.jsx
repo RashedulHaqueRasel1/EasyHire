@@ -10,6 +10,7 @@ import CardDetails from "../CardDetails/CardDetails";
 import AddJobs from "../AddJobs/AddJobs";
 import MyJobs from "../MyJobs/MyJobs";
 import ApplyJobs from "../ApplyJobs/ApplyJobs";
+import Profile from "../Profile/Profile";
  
 
 
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
             {
                 path: '/applyJobs',
                 element: <PrivetRoute><ApplyJobs></ApplyJobs></PrivetRoute>
+            },
+            {
+                path: '/profile',
+                element: <PrivetRoute><Profile></Profile></PrivetRoute>
             }
         ]
 

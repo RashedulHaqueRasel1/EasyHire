@@ -126,7 +126,7 @@ const MyJobs = () => {
                                 <th> img</th>
                                 <th>Job Title</th>
                                 <th>Email</th>
-                                <th>Posting Date</th>
+                                <th>Application Date</th>
                                 <th>Salary</th>
                                 <th>Action</th>
                             </tr>

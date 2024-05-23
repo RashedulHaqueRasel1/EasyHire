@@ -12,9 +12,9 @@ const MyJob = ({ myJob, handleDelete, }) => {
 
     const { _id,
         job_title,
-        posting_Date,
         salary,
-        photo
+        photo,
+        application_Date
     } = myJob;
 
 
@@ -46,7 +46,7 @@ const MyJob = ({ myJob, handleDelete, }) => {
                 {job_title}
             </td>
             <td>{user?.email}</td>
-            <td>{posting_Date}</td>
+            <td>{new Date(application_Date).toLocaleDateString('en-GB')}</td>
             <td>$ {salary}</td>
             <th>
                 <>

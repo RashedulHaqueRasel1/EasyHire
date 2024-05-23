@@ -11,6 +11,7 @@ const Registration = () => {
     const navigate = useNavigate();
     const [errorPassword, setErrorPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
+    const [info, setInfo] = useState('');
 
     // console.log(createUser)
 
@@ -44,6 +45,20 @@ const Registration = () => {
         }
 
 
+        // save userInfo MongoDB userInfo Collection
+        fetch(`${import.meta.env.VITE_API}/userInfo`, {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setInfo(data)
+ 
+            })
+
+
         // console.log(data)
 
         // create User
@@ -58,7 +73,7 @@ const Registration = () => {
                             icon: "success"
                         });
 
-                        
+
                         // Page Change
                         navigate('/')
 
@@ -78,6 +93,9 @@ const Registration = () => {
 
                 console.error(error)
             })
+
+
+            console.log(info)
 
 
 

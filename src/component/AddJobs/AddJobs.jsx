@@ -35,7 +35,7 @@ const AddJobs = () => {
         data.email = email;
         data.application_Date = startDate;
 
-        // send data MongoDB allJobs Collection
+        // save data MongoDB allJobs Collection
         fetch(`${import.meta.env.VITE_API}/allJobs`, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },

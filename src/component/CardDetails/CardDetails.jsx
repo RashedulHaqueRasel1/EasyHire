@@ -5,6 +5,8 @@ import { useContext, useState, } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
+import {  toast } from "react-toastify"
+
 
 
 const CardDetails = () => {
@@ -55,8 +57,8 @@ const CardDetails = () => {
 
     
         if ( applyDate.getTime() <  currentDate.getTime()) {
-            alert('Not')
-            return
+            toast.error("Apply date is Over! Don't Apply This job.")
+            return ;
         }
 
 
@@ -141,6 +143,11 @@ const CardDetails = () => {
                                     <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
                                         <dt className=" text-gray-900">Job Category :</dt>
                                         <dd className="text-gray-700 font-medium sm:col-span-2">{category}</dd>
+                                    </div>
+
+                                    <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                                        <dt className=" text-gray-900">Application Date :</dt>
+                                        <dd className="text-gray-700 font-medium sm:col-span-2">{new Date(application_Date).toLocaleDateString('en-GB')}</dd>
                                     </div>
 
 
