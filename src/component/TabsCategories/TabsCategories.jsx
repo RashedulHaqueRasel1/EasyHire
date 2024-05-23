@@ -4,7 +4,7 @@ import JobCard from '../JobCard/JobCard';
 
 const TabsCategories = ({ allJobs }) => {
 
-    console.log(allJobs)
+    // console.log(allJobs)
 
     return (
         <div className='mb-96'>
@@ -29,7 +29,7 @@ const TabsCategories = ({ allJobs }) => {
                 <TabPanel>
                     <div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
                         {
-                            allJobs.filter(j => j.type === 'On-Site').map(allJob => <JobCard key={allJob._id} allJob={allJob}></JobCard>)
+                            allJobs.filter(job => job?.category === 'On Site').map(allJob => <JobCard key={allJob._id} allJob={allJob}></JobCard>)
                         }
                     </div>
                 </TabPanel>
@@ -37,25 +37,28 @@ const TabsCategories = ({ allJobs }) => {
                 <TabPanel>
                     <div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
                         {
-                            allJobs.filter(j => j.type === "Remote").map(allJob => <JobCard key={allJob._id} allJob={allJob}></JobCard>)
+                            allJobs.filter(job => job?.category === "Remote").map(allJob => <JobCard key={allJob._id} allJob={allJob}></JobCard>)
                         }
                     </div>
+ 
                 </TabPanel>
 
                 <TabPanel>
                     <div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
                         {
-                            allJobs.filter(j => j.type === "Hybrid").map(allJob => <JobCard key={allJob._id} allJob={allJob}></JobCard>)
+                            allJobs.filter(job => job?.category === "Hybrid").map(allJob => <JobCard key={allJob._id} allJob={allJob}></JobCard>)
                         }
                     </div>
+  
                 </TabPanel>
 
                 <TabPanel>
                     <div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
                         {
-                            allJobs.filter(j => j.type === "Part-Time").map(allJob => <JobCard key={allJob._id} allJob={allJob}></JobCard>)
+                            allJobs.filter(job => job?.category === "Part-Time").map(allJob => <JobCard key={allJob._id} allJob={allJob}></JobCard>)
                         }
                     </div>
+ 
                 </TabPanel>
             </Tabs>
 

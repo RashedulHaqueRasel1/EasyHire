@@ -49,8 +49,8 @@ const Registration = () => {
         // create User
         createUser(email, password)
             .then(result => {
-                updateUserProfile(name, photo)
                 console.log(result.user)
+                updateUserProfile(name, photo)
                     .then(() => {
                         Swal.fire({
                             title: "Registration Success",
