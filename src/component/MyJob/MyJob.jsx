@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 const MyJob = ({ myJob, handleDelete, }) => {
 
-    // console.log(myJob)
+    console.log(myJob)
 
     const { user } = useContext(AuthContext);
 
@@ -50,7 +50,7 @@ const MyJob = ({ myJob, handleDelete, }) => {
             <td>$ {salary}</td>
             <th>
                 <>
-                    <Link to={`/update/${_id}`}>
+                    <Link to={`/updateJob/${_id}`}>
                         <button className="btn btn-primary ">Update</button>
                     </Link>
                 </>

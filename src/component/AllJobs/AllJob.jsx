@@ -23,7 +23,7 @@ const AllJob = ({ allJob }) => {
 
             <div className='w-full max-w-sm px-4 py-3 mt-8 bg-white rounded-md shadow-md hover:scale-[1.05] transition-all' style={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}>
                 <div className='flex items-center justify-between'>
-                    <span className='text-xs font-light text-gray-800 '>
+                    <span className='text-xs font-semibold text-primary '>
                 Application Deadline :   {new Date(application_Date).toLocaleDateString('en-GB')}
                     </span>
                     <span className='px-3 py-1 text-[14px] text-primary uppercase bg-blue-200 rounded-full '>
