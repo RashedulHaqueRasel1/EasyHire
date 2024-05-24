@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../Provider/AuthProvider";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
@@ -14,6 +14,7 @@ const UpdateJob = () => {
     const { user } = useContext(AuthContext)
     // const { email } = user;
     const [startDate, setStartDate] = useState(new Date());
+    const navigate = useNavigate();
 
 
     const {_id} = job;
@@ -36,14 +37,16 @@ const UpdateJob = () => {
 
             .then(res => res.json())
             .then(data => {
-                console.log(data)
-                if (data.insertedId) {
+                // console.log(data)
+                if (data.modifiedCount > 0) {
 
                     Swal.fire({
                         title: "Congratulations!",
                         text: " Job Update Successfully",
                         icon: "success"
                     });
+
+                    navigate('/myJobs')
                 }
 
             })

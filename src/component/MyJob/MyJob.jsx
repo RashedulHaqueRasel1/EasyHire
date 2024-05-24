@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 const MyJob = ({ myJob, handleDelete, }) => {
 
-    console.log(myJob)
+    // console.log(myJob)
 
     const { user } = useContext(AuthContext);
 

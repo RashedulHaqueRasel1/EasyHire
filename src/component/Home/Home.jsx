@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import TabsCategories from "../TabsCategories/TabsCategories";
+import Subscribe from "../Subscribe/Subscribe";
 
  
 
@@ -12,6 +13,7 @@ const Home = () => {
 
             <Banner></Banner>
             <TabsCategories allJobs={allJobs}></TabsCategories>
+            <Subscribe></Subscribe>
             
         </div>
     );

@@ -33,14 +33,14 @@ const NavBar = () => {
         {
             user && <>
                 <Link to={'/addJobs'}>
-                    <button className="btn bg-primary hover:bg-transparent text-white hover:text-black hover:border-black " >Add Jobs</button>
+                    <button className="btn bg-primary hover:bg-transparent text-white hover:text-black hover:border-black  " >Add Jobs</button>
                 </Link>
                 <Link to={'/myJobs'}>
                     <button className="btn bg-primary hover:bg-transparent text-white hover:text-black hover:border-black " >My Jobs</button>
                 </Link>
             </>
         }
-        <Link to={'/about'} className="btn bg-primary hover:bg-transparent text-white hover:text-black hover:border-black "><li>Blogs</li></Link>
+        <Link to={'/blogs'} className="btn bg-primary hover:bg-transparent text-white hover:text-black hover:border-black "><li>Blogs</li></Link>
         {
             user && <>
                 <Link to={'/profile'} className="btn bg-primary hover:bg-transparent text-white hover:text-black hover:border-black "><li>Profile</li></Link>

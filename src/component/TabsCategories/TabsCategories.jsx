@@ -13,7 +13,7 @@ const TabsCategories = ({ allJobs }) => {
             <Tabs>
 
                 <div className="text-center rounded-lg mt-24">
-                    <h2 className="text-2xl lg:text-4xl text-primary-text-color font-extrabold ">All Jobs</h2>
+                    <h2 className="text-2xl lg:text-4xl text-primary-text-color font-extrabold ">Latest Jobs</h2>
                     <p className="font-medium opacity-60 mt-6 text-sm px-8 lg:p-0 lg:text-lg mx-auto  w-full lg:w-2/4">Work at a specific location, such as an office or store, with direct interaction with colleagues and clients. Enjoy access to company resources and a structured environment. Ideal for those who thrive on routine and face-to-face collaboration.</p>
                 </div>
 

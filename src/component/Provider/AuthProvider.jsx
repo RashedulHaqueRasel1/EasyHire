@@ -3,6 +3,7 @@ import { signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/Firebase.config";
 import { GoogleAuthProvider } from "firebase/auth";
+import axios from "axios";
  
 
 
@@ -65,33 +66,36 @@ const AuthProvider = ({ children }) => {
 
 
 
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, currentUser => {
-            // const userEmail = currentUser?.email || user?.email;
-            // const loggedUser = { email: userEmail };
-            setUser(currentUser);
-            // console.log('current user', currentUser);
-            setLoading(false);
-            // if user exists then issue a token
-            // if (currentUser) {
-            //     axios.post('http://localhost:5000/jwt', loggedUser, { withCredentials: true })
-            //         .then(res => {
-            //             console.log('token response', res.data);
-            //         })
-            // }
-            // else {
-            //     axios.post('http://localhost:5000/logout', loggedUser, {
-            //         withCredentials: true
-            //     })
-            //         .then(res => {
-            //             console.log(res.data);
-            //         })
-            // }
-        });
-        return () => {
-            return unsubscribe();
-        }
-    }, [])
+        useEffect(() => {
+            const unsubscribe = onAuthStateChanged(auth, currentUser => {
+                const userEmail = currentUser?.email || user?.email;
+                const loggedUser = { email: userEmail };
+                setUser(currentUser);
+                // console.log('current user', currentUser);
+                setLoading(false);
+                // if user exists then issue a token
+                if (currentUser) {
+                    axios.post('http://localhost:5000/jwt', loggedUser, { withCredentials: true })
+                        .then(res => {
+                            console.log('token response', res.data);
+                        })
+                }
+                else {
+                    axios.post('http://localhost:5000/logout', loggedUser, {
+                        withCredentials: true
+                    })
+                        .then(res => {
+                            console.log(res.data);
+                        })
+                }
+            });
+            return () => {
+                return unsubscribe();
+            }
+        }, [])
+    
+    
+    
 
 
 
