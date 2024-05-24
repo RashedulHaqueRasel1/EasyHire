@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="px-4 divide-y mt-24 ">
-            <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0 border border-blue-400 rounded-3xl ">
+            <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0 border hover:bg-blue-200 border-blue-400 rounded-3xl ">
                 <div className="lg:w-1/3">
                     <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
                         <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-default-600">
@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                     <div className="space-y-3">
                         <label className="label">
-                            <span className="label-text font-bold">Product</span>
+                            <span className="  font-bold">Product</span>
                         </label>
                         <ul className="space-y-1">
                             <li>
@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
                     <div className="space-y-3">
                         <label className="label">
-                            <span className="label-text font-bold">Company</span>
+                            <span className="  font-bold">Company</span>
                         </label>
                         <ul className="space-y-1">
                             <li>
@@ -47,7 +47,7 @@ const Footer = () => {
                     </div>
                     <div className="space-y-3">
                         <label className="label">
-                            <span className="label-text font-bold">DEVELOPERS</span>
+                            <span className=" font-bold">DEVELOPERS</span>
                         </label>
                         <ul className="space-y-1">
                             <li>
@@ -64,7 +64,7 @@ const Footer = () => {
                     <div className="space-y-3">
                         <div className="uppercase dark:text-gray-900">                            
                         <label className="label">
-                            <span className="label-text font-bold">SOCIAL MEDIA</span>
+                            <span className=" font-bold">SOCIAL MEDIA</span>
                         </label></div>
                         <div className="flex justify-start space-x-3">
                             <a rel="noopener noreferrer" href="https://www.facebook.com/Rashedul.haque.Rase1" title="Facebook" className="flex items-center p-1">
@@ -86,7 +86,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-6 text-sm text-center dark:text-gray-600 ">© 2024 Company Co. All rights reserved.</div>
+            <div className="py-6 text-sm text-center dark:text-gray-600 ">© 2024  Company Rasel.Co. All rights reserved.</div>
         </footer>
     );
 };

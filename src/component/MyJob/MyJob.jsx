@@ -22,7 +22,7 @@ const MyJob = ({ myJob, handleDelete, }) => {
 
     return (
 
-        <tr>
+        <tr className="border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
             <th>
                 <label>
                     <button onClick={() => handleDelete(_id)} className="btn btn-circle btn-outline">

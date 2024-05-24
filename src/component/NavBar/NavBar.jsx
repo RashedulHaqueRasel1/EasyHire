@@ -86,13 +86,13 @@ const NavBar = () => {
                                 <div className="dropdown dropdown-end">
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-left" data-tip={user.displayName} >
                                         <div className="w-10 rounded-full " >
-                                            <img alt="Tailwind CSS Navbar component" src={user?.photoURL || 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'} />
+                                            <img alt="Tailwind CSS Navbar component" src={user.photoURL || 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'} />
                                         </div>
                                     </div>
                                     <ul tabIndex={0} className="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52">
                                         <Link to={'/allJobs'}>
                                             <button className="btn w-full  bg-primary hover:bg-transparent text-white hover:text-black " >
-                                                My List
+                                                All Job
                                             </button>
                                         </Link>
                                         <button onClick={handleLogOut} className="btn bg-primary hover:bg-transparent text-white hover:text-black " >

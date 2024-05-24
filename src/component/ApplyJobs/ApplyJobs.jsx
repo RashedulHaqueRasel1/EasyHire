@@ -41,7 +41,7 @@ const ApplyJobs = () => {
     return (
         <div>
 
-            <div className="text-center mt-6">
+            <div className="text-center mt-6 ">
                 <div className="dropdown dropdown-bottom dropdown-end">
                     <div tabIndex={0} role="button" className="m-1 btn  hover:outline text-[16px] bg-primary hover:bg-transparent text-white hover:text-black mr-3  ">Filter</div>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow   rounded-box w-52 bg-primary">
@@ -66,7 +66,7 @@ const ApplyJobs = () => {
 
 
             <div>
-                <div className="overflow-x-auto">
+                <div className="overflow-x-auto ">
                     <table className="table">
                         {/* head */}
                         <thead>
@@ -79,7 +79,7 @@ const ApplyJobs = () => {
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="">
                             {/* row 1 */}
 
                             {

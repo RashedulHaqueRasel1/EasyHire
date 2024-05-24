@@ -3,7 +3,7 @@
 const Subscribe = () => {
     return (
         <div>
-            <section className="py-6 bg-blue-200 rounded-3xl ">
+            <section className="py-6 border-2 border-blue-400 hover:bg-blue-200 rounded-3xl ">
 
                 <div className="container mx-auto flex flex-col justify-center p-4 space-y-8 md:p-10  lg:space-x-12 lg:justify-between lg:flex-row ">
                     <div className="flex flex-col space-y-4 text-center lg:text-left">

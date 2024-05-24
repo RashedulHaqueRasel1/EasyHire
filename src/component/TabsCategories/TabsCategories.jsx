@@ -7,7 +7,7 @@ const TabsCategories = ({ allJobs }) => {
     // console.log(allJobs)
 
     return (
-        <div className='mb-96'>
+        <div className=''>
 
 
             <Tabs>

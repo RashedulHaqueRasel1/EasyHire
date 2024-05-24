@@ -24,7 +24,7 @@ const ApplyJob = ({ job }) => {
     return (
 
 
-        <tr>
+        <tr className="border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
 
             <td>
                 <div className="flex items-center gap-3">
