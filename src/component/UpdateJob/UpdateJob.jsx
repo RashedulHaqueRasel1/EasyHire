@@ -12,7 +12,7 @@ const UpdateJob = () => {
     const job = useLoaderData();
     // console.log(job)
     const { user } = useContext(AuthContext)
-    // const { email } = user;
+
     const [startDate, setStartDate] = useState(new Date());
     const navigate = useNavigate();
 

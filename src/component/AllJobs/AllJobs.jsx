@@ -6,6 +6,7 @@ import AllJob from "./AllJob";
 const AllJobs = () => {
 
     const allJobs = useLoaderData();
+    
     // console.log(allJobs)
 
 

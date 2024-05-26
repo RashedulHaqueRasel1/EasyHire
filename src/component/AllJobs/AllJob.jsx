@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 
 const AllJob = ({ allJob }) => {
-    // console.log(allJob)
 
     const {
         _id,
@@ -12,7 +11,6 @@ const AllJob = ({ allJob }) => {
         application_Date,
         category,
         salary,
-        applicants_number,
         description } = allJob;
 
 
