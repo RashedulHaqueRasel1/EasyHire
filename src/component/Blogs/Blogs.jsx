@@ -5,7 +5,7 @@ const Blogs = () => {
         <div>
             <section className="">
                 <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 ">
-                    <a rel="noopener noreferrer" href="#" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50 border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
+                    <a rel="noopener noreferrer" href="https://dev.to/timokonkwo/top-10-free-websites-to-get-jobs-turn-your-career-around-in-2023-2fi3" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50 border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
                         <img src="https://source.unsplash.com/random/480x360" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
                         <div className="p-6 space-y-2 lg:col-span-5">
                             <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Remote Software Engineer</h3>
