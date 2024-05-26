@@ -19,7 +19,6 @@ const Registration = () => {
     const {
         register,
         handleSubmit,
-        // watch,
         formState: { errors },
     } = useForm()
 
@@ -81,14 +80,12 @@ const Registration = () => {
 
                     })
 
-                // console.log(result.user)
             })
             .catch(error => {
                 Swal.fire({
                     icon: "error",
                     title: "Oops...",
                     text: "Something went wrong!",
-                    // footer: '<a href="#">Why do I have this issue?</a>'
                 });
 
                 console.error(error)

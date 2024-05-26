@@ -19,16 +19,13 @@ const LogIn = () => {
     const [showPassword, setShowPassword] = useState(false);
 
     const location = useLocation();
-    // console.log(location)
     const navigate = useNavigate();
 
-    // console.log(createUser)
 
 
     const {
         register,
         handleSubmit,
-        // watch,
         formState: { errors },
     } = useForm()
 
@@ -62,14 +59,6 @@ const LogIn = () => {
 
                 // const user = { email }
                 navigate(location?.state ? location?.state : '/')
-                // Access JWT Token
-                // axios.post('https://easy-hire-server-site.vercel.app/jwt', user, { withCredentials: true })
-                //     .then(res => {
-                //         console.log(res.data)
-                //         if (res.data.success) {
-                //             navigate(location?.state ? location?.state : '/')
-                //         }
-                //     })
 
             })
             .catch(error => {
@@ -84,7 +73,6 @@ const LogIn = () => {
     const handleGoogleSignIn = () => {
 
         singWithGoogle()
-            // console.log(singWithGoogle)
 
             .then(result => {
                 console.log(result.user)
