@@ -1,19 +1,23 @@
- 
+// import Download from "../Download/Download";
+
+// import Download from "../Download/Download";
+
+
 
 
 
 const ApplyJob = ({ job }) => {
 
- 
 
 
 
-    // console.log(job)
+
+
+
+    console.log(job)
 
     const {
-        id,
         title,
-        description,
         salary,
         application_Number,
         category,
@@ -24,7 +28,7 @@ const ApplyJob = ({ job }) => {
     return (
 
 
-        <tr className="border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
+        <tr className="border-2 border-blue-200 rounded-3xl  hover:bg-blue-200" >
 
             <td>
                 <div className="flex items-center gap-3">
@@ -44,10 +48,9 @@ const ApplyJob = ({ job }) => {
             <td>{category}</td>
             <td>{application_Number}</td>
             <td>$ {salary}</td>
-            <th>
-                <button className="btn btn-primary">Download</button>
-            </th>
-        </tr>
+
+
+        </tr >
 
     );
 };

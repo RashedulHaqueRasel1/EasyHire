@@ -5,12 +5,13 @@ import { useNavigate } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { AuthContext } from "../Provider/AuthProvider";
-// ..
 AOS.init();
 import { useState } from "react";
 import DatePicker from "react-datepicker";
-
 import "react-datepicker/dist/react-datepicker.css";
+
+
+
 
 const AddJobs = () => {
 
@@ -27,7 +28,6 @@ const AddJobs = () => {
         register,
         handleSubmit,
         formState: { errors },
-        // clearErrors
     } = useForm()
 
     const onSubmit = (data) => {
@@ -46,7 +46,7 @@ const AddJobs = () => {
             .then(data => {
                 console.log(data)
                 if (data.insertedId) {
-                    // alert("create success")
+
                     Swal.fire({
                         title: "Congratulations!",
                         text: "Job Added Successfully",
@@ -56,13 +56,11 @@ const AddJobs = () => {
                 }
 
             })
-
     }
 
 
     return (
         <div className="  mx-auto container   mt-10" style={{ boxShadow: 'box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}    >
-
 
             <div className="    shadow-2xl bg-base-100   p-10 space-y-6 rounded-xl container mx-auto   border-red-500" style={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}  >
 
@@ -73,13 +71,13 @@ const AddJobs = () => {
                 <form className="space-y-6" onSubmit={handleSubmit(onSubmit)} >
                     <div className="lg:flex justify-center">
                         <div className="space-y-1 text-sm" data-aos="fade-up" data-aos-duration="2200">
+
                             <label className="label">
                                 <span className="label-text font-bold">Your Name</span>
                             </label>
                             <div className="border border-blue-300   focus:dark:border-blue-500">
                                 <input type="text" name="username" id="username" defaultValue={user.displayName} className="input input-bordered lg:w-[600px] w-full    border-blue-300   focus:dark:border-blue-500 dark:bg-gray-400" disabled />
                             </div>
-
 
                         </div>
 
@@ -92,8 +90,6 @@ const AddJobs = () => {
                                 <input type="text" name="email" id="email" defaultValue={user.email} className="input input-bordered  lg:w-[600px] lg:ml-4 w-full    border-blue-300   focus:dark:border-blue-500 dark:bg-gray-400" disabled />
 
                             </div>
-
-
                         </div>
 
                     </div>

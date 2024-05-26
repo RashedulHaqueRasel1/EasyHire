@@ -2,6 +2,12 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import ApplyJob from "../ApplyJob/ApplyJob";
 // import { LiaSortDownSolid } from "react-icons/lia";
+import { useRef } from "react";
+import { useReactToPrint } from "react-to-print";
+import Swal from "sweetalert2";
+
+
+
 
 
 
@@ -11,13 +17,31 @@ const ApplyJobs = () => {
 
 
 
+
+
     const [jobs, setJobs] = useState([]);
     const [filter, setFilter] = useState('All');
 
 
+    const componentRef = useRef();
+
+    const handleGeneratePdf = useReactToPrint({
+        content: () => componentRef.current,
+        documentTitle: "appliedJob",
+        onAfterPrint: () => {
+            Swal.fire({
+                title: "Congratulations!",
+                text: "Download Successfully",
+                icon: "success"
+            });
+        }
+    })
+
+
+
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API}/applyJobss/${user?.email}`)
+        fetch(`${import.meta.env.VITE_API}/applyJobss/${user?.email}`, { withCredential: true })
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -38,10 +62,12 @@ const ApplyJobs = () => {
 
 
 
+
+
     return (
         <div>
 
-            <div className="text-center mt-6 ">
+            <div className="text-center mt-6 " >
                 <div className="dropdown dropdown-bottom dropdown-end">
                     <div tabIndex={0} role="button" className="m-1 btn  hover:outline text-[16px] bg-primary hover:bg-transparent text-white hover:text-black mr-3  ">Filter</div>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow   rounded-box w-52 bg-primary">
@@ -66,7 +92,7 @@ const ApplyJobs = () => {
 
 
             <div>
-                <div className="overflow-x-auto ">
+                <div className="overflow-x-auto " ref={componentRef} style={{ width: '100%' }}>
                     <table className="table">
                         {/* head */}
                         <thead>
@@ -76,14 +102,14 @@ const ApplyJobs = () => {
                                 <th>Category</th>
                                 <th>Application Number</th>
                                 <th>Salary</th>
-                                <th>Action</th>
+
                             </tr>
                         </thead>
-                        <tbody className="">
+                        <tbody className=""  >
                             {/* row 1 */}
 
                             {
-                                filteredJobs.map(job => <ApplyJob key={job._id} job={job}></ApplyJob>)
+                                filteredJobs.map(job => <ApplyJob key={job._id} job={job} ></ApplyJob>)
                             }
 
 
@@ -93,6 +119,15 @@ const ApplyJobs = () => {
                     </table>
                 </div>
             </div>
+
+
+
+            <div className="text-center mt-8">
+                <button className='btn  hover:outline text-[16px] bg-primary hover:bg-transparent text-white hover:text-black mr-3' onClick={handleGeneratePdf} >Download</button>
+            </div>
+
+
+
 
 
 
