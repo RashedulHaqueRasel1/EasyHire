@@ -66,7 +66,7 @@ const router = createBrowserRouter([
             {
                 path: '/updateJob/:id',
                 element: <PrivetRoute><UpdateJob></UpdateJob></PrivetRoute>,
-                loader: ({params}) => fetch(`https://easy-hire-server-site.vercel.app/${params.id}`)
+                loader: ({params}) => fetch(`https://easy-hire-server-site.vercel.app/allJobs/${params.id}`)
             },
             {
                 path: '/blogs',
