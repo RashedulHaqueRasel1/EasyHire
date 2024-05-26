@@ -2,6 +2,11 @@
 
 Welcome to the client side of the EasyHire website! This repository contains the front-end code for the EasyHire platform, where users can explore job opportunities, apply for jobs, manage their job postings, read blogs, and update their user profiles.
 
+
+## Live Link
+You can access the live version of the EasyHire website here: [EasyHire Live](https://www.easyhire.com)
+
+
 ## Table of Contents
 
 - [Features](#features)
