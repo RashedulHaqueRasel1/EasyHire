@@ -22,7 +22,7 @@ const Blogs = () => {
                                 <p>Perform administrative tasks such as scheduling appointments, managing emails, and organizing files. Provide support to office staff and ensure smooth office operations. Strong organizational skills and proficiency with office software required...</p>
                             </div>
                         </a>
-                        <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
+                        <a rel="noopener noreferrer" href="https://dev.to/duomly/is-remote-job-good-a-good-solution-for-you-pros-and-cons-of-working-remotely-328i" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?2" />
                             <div className="p-6 space-y-2">
                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Hybrid Marketing Coordinator</h3>
