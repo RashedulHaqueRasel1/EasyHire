@@ -73,7 +73,7 @@ const AuthProvider = ({ children }) => {
                 setUser(currentUser);
                 // console.log('current user', currentUser);
                 setLoading(false);
-                // if user exists then issue a token
+                
                 if (currentUser) {
                     axios.post('https://easy-hire-server-site.vercel.app/jwt', loggedUser,{withCredentials: true})
                         .then(res => {
