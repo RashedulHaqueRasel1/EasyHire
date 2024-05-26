@@ -102,7 +102,6 @@ const MyJobs = () => {
                     update.status = 'confirm'
                     const newBookings = [update, ...remaining]
                     setItem(newBookings)
-                    // setBookings(remaining)
                 }
             })
     }

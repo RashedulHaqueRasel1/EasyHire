@@ -5,10 +5,6 @@ import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import googleIcon from "../../../public/google.png"
-// import axios from "axios";
-
-// import axios from "axios";
-
 
 
 const LogIn = () => {
@@ -49,6 +45,8 @@ const LogIn = () => {
         }
 
         // console.log(data)
+
+
 
         // signIn User
 
@@ -127,7 +125,6 @@ const LogIn = () => {
                                         type={showPassword ? "text" : "password"}
                                         placeholder="password"
                                         name="password"
-                                        // className=""
                                         {...register("password", { required: true })}
 
                                     />

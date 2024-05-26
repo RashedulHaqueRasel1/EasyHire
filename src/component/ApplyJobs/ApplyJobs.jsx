@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import ApplyJob from "../ApplyJob/ApplyJob";
-// import { LiaSortDownSolid } from "react-icons/lia";
 import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import Swal from "sweetalert2";
@@ -14,10 +13,6 @@ import Swal from "sweetalert2";
 const ApplyJobs = () => {
 
     const { user } = useContext(AuthContext);
-
-
-
-
 
     const [jobs, setJobs] = useState([]);
     const [filter, setFilter] = useState('All');
@@ -52,15 +47,13 @@ const ApplyJobs = () => {
     }, [user])
 
 
+
     // Handle Filter Jobs By category
     const handleFilterChange = (category) => {
         setFilter(category);
     };
 
-
     const filteredJobs = filter === 'All' ? jobs : jobs.filter(job => job.category === filter);
-
-
 
 
 
@@ -121,15 +114,9 @@ const ApplyJobs = () => {
             </div>
 
 
-
             <div className="text-center mt-8">
                 <button className='btn  hover:outline text-[16px] bg-primary hover:bg-transparent text-white hover:text-black mr-3' onClick={handleGeneratePdf} >Download</button>
             </div>
-
-
-
-
-
 
 
 

@@ -77,7 +77,7 @@ const AuthProvider = ({ children }) => {
                 if (currentUser) {
                     axios.post('https://easy-hire-server-site.vercel.app/jwt', loggedUser,{withCredentials: true})
                         .then(res => {
-                            // console.log('token response', res.data);
+                            console.log('token response', res.data);
                         })
                 }
                 else {

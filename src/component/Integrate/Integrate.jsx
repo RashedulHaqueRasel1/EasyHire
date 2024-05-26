@@ -6,7 +6,7 @@ const Integrate = () => {
                 <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Numbers tell our story</h2>
-                        <p className="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8"> With over 6 years in business, we've been creating successful paths for job seekers and employers alike.</p>
+                        <p className="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8"> With over 6 years in business, we have been creating successful paths for job seekers and employers alike.</p>
                     </div>
 
                     <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">

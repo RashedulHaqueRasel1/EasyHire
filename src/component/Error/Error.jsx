@@ -1,4 +1,3 @@
-// import { IoMdArrowRoundBack } from "react-icons/io";
 import { NavLink, useRouteError } from "react-router-dom";
 import './style.css';
 import { IoMdArrowRoundBack } from "react-icons/io";
