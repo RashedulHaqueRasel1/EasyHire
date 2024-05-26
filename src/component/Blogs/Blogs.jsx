@@ -30,12 +30,12 @@ const Blogs = () => {
                                 <p>Develop and execute marketing campaigns both online and offline. Collaborate with team members in-office and remotely. Skills in digital marketing, content creation, and event planning necessary...</p>
                             </div>
                         </a>
-                        <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
+                        <a rel="noopener noreferrer" href="https://dev.to/emunsey/hiring-part-time-remote-developer-4kg2" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?3" />
                             <div className="p-6 space-y-2">
-                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-                                <span className="text-xs dark:text-gray-600">January 23, 2021</span>
-                                <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+                                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Hiring Part Time Remote Developer</h3>
+                                <span className="text-xs dark:text-gray-600">January 23, 2024</span>
+                                <p>We are looking to bring a new App Developer onto our team asap! The position is part time and remote, and applicant must be proficient in using the React Native framework! We are looking to bring someone on as soon as possible, so get super excited as joining our team is an awesome opportunity to aid us in huge potential growth and expansion!</p>
                             </div>
                         </a>
                         <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 hidden sm:block border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
