@@ -46,7 +46,7 @@ const Blogs = () => {
                                 <p>Assist customers with purchases, maintain store appearance, and handle transactions. Excellent customer service skills and ability to work in a fast-paced environment required..</p>
                             </div>
                         </a>
-                        <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 hidden sm:block border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
+                        <a rel="noopener noreferrer" href="https://dev.to/astrodevil/full-timeinternships-jobs-latest-onsite-remote-openings-9m6" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 hidden sm:block border-2 border-blue-200 rounded-3xl  hover:bg-blue-200">
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?5" />
                             <div className="p-6 space-y-2">
                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Part-Time Social Media Manager</h3>
