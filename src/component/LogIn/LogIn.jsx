@@ -5,6 +5,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import googleIcon from "../../../public/google.png"
+// import axios from "axios";
 
 // import axios from "axios";
 
@@ -12,7 +13,7 @@ import googleIcon from "../../../public/google.png"
 
 const LogIn = () => {
 
-    const { signIn } = useContext(AuthContext);
+    const { signIn} = useContext(AuthContext);
     const { singWithGoogle } = useContext(AuthContext)
     const [errorPassword, setErrorPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
@@ -62,7 +63,7 @@ const LogIn = () => {
                 // const user = { email }
                 navigate(location?.state ? location?.state : '/')
                 // Access JWT Token
-                // axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
+                // axios.post('https://easy-hire-server-site.vercel.app/jwt', user, { withCredentials: true })
                 //     .then(res => {
                 //         console.log(res.data)
                 //         if (res.data.success) {
@@ -117,9 +118,9 @@ const LogIn = () => {
                 <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left w-1/2">
                         <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className="py-6 font-bold opacity-60">Sign in to access your account and continue your journey with us.</p>
                     </div>
-                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100" style={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}  >
+                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 border-2 border-blue-200    hover:bg-blue-200 " style={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}  >
                         <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-control">
                                 <label className="label">

@@ -45,7 +45,7 @@ const router = createBrowserRouter([
             {
                 path: '/cardDetails/:id',
                 element: <PrivetRoute><CardDetails></CardDetails></PrivetRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/allJobs/${params.id}`)
+                loader: ({params}) => fetch(`https://easy-hire-server-site.vercel.app/allJobs/${params.id}`)
             },
             {
                 path: '/addJobs',
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
             {
                 path: '/updateJob/:id',
                 element: <PrivetRoute><UpdateJob></UpdateJob></PrivetRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/allJobs/${params.id}`)
+                loader: ({params}) => fetch(`https://easy-hire-server-site.vercel.app/${params.id}`)
             },
             {
                 path: '/blogs',

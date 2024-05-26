@@ -47,13 +47,13 @@ const MyJobs = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/allJobs/${id}`, {
+                fetch(`https://easy-hire-server-site.vercel.app/allJobs/${id}`, {
                     method: 'DELETE',
 
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data)
+                        // console.log(data)
                         if (data.deletedCount > 0) {
                             Swal.fire({
                                 title: "Deleted!",
@@ -62,7 +62,7 @@ const MyJobs = () => {
 
                             });
 
-                            navigate('/')
+                            navigate('/myJobs')
                         }
 
 
@@ -83,7 +83,7 @@ const MyJobs = () => {
     // Handle Update
     const handleUpdate = id => {
         // const proceed =
-        fetch(`http://localhost:5000/allJobs/${id}`, {
+        fetch(`https://easy-hire-server-site.vercel.app/allJobs/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

@@ -14,7 +14,7 @@ const ApplyJob = ({ job }) => {
 
 
 
-    console.log(job)
+    // console.log(job)
 
     const {
         title,

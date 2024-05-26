@@ -1,7 +1,7 @@
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { NavLink, useLoaderData, useNavigate } from "react-router-dom";
 import { IoMdAddCircle } from "react-icons/io";
-import { useContext, useState, } from "react";
+import { useContext} from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
@@ -13,18 +13,19 @@ const CardDetails = () => {
 
     const jobDetails = useLoaderData();
 
+    // console.log(jobDetails)
+
     const { user } = useContext(AuthContext);
     const navigate = useNavigate();
     // console.log(user)
     const { email, displayName } = user;
 
-    const [date, setDate] = useState();
 
     // console.log(jobDetails)
 
 
     const {
-        id,
+        
         job_title,
         description,
         salary,
@@ -34,7 +35,7 @@ const CardDetails = () => {
         application_Date
     } = jobDetails;
 
-    console.log(jobDetails)
+    // console.log(jobDetails)
 
 
     const {
@@ -87,7 +88,7 @@ const CardDetails = () => {
 
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 if (data.insertedId) {
 
                     Swal.fire({
