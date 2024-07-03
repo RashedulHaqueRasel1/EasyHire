@@ -4,7 +4,7 @@ Welcome to the client side of the EasyHire website! This repository contains the
 
 
 ## Live Link
-You can access the live version of the EasyHire website here: [EasyHire Live](https://www.easyhire.com)
+You can access the live version of the EasyHire website here: [Easy Hire](https://easyhire-rasel.web.app/)
 
 
 ## Table of Contents
@@ -37,3 +37,25 @@ Read insightful articles and blog posts related to career advice, job search tip
 
 ### User Profile
 Update your personal information, upload your resume, manage your account settings, and view your job application history. Ensure your profile is up-to-date to enhance your job search experience.
+
+
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+## Installation
+
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/RashedulHaqueRasel1/EasyHire.git
+
+2. Install all dependencies:
+   
+   ```sh
+    npm install
+   
+3. Live Preview
+To run the project locally and see a live preview:
+```sh
+  npm run dev
