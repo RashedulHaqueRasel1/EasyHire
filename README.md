@@ -39,6 +39,22 @@ Read insightful articles and blog posts related to career advice, job search tip
 Update your personal information, upload your resume, manage your account settings, and view your job application history. Ensure your profile is up-to-date to enhance your job search experience.
 
 
+## Technology Used
+
+- Git
+- Express.js
+- React.js
+- Tailwind CSS
+- Swiper.js
+- SweetAlert
+- Daisy UI
+- Meraki UI
+- React Router Dom
+- React Hook Form
+- React Icon
+- Axios
+- 
+
 
 ## Getting Started
 
@@ -57,5 +73,5 @@ To get a local copy up and running, follow these simple steps.
    
 3. Live Preview
 To run the project locally and see a live preview:
-```sh
-  npm run dev
+    ```sh
+     npm run dev
