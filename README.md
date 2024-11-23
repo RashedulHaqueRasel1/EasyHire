@@ -9,13 +9,13 @@ You can access the live version of the EasyHire website here: [Easy Hire](https:
 
 ## Table of Contents
 
-- [Features](#features)
-  - [All Jobs](#all-jobs)
-  - [Applied Job](#applied-job)
-  - [Added Job](#added-job)
-  - [My Jobs](#my-jobs)
-  - [Blogs](#blogs)
-  - [User Profile](#user-profile)
+- [Features]
+  - [All Jobs]
+  - [Applied Job]
+  - [Added Job]
+  - [My Jobs]
+  - [Blogs]
+  - [User Profile]
 
 
 # Features
